@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+box-sizing:border-box;	
+}
+
+body {
+	/* margin:0; */
+	background-color: #fff;
+	font-family: "agency fb"
+}
+
+
+button {
+	cursor: pointer;
+}
+
+button:active {
+	transform: scale(.9);
+}
+
+input:focus,
+button:focus{
+	outline: none;
+}
+
+
+header {
+	background: url(https://images.unsplash.com/photo-1501612780327-45045538702b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80) no-repeat center center/cover;
+	width: 100%;
+	height: 250px;
+	color: #eee;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 100px 0;
+	position: relative;
+}
+
+header::after {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.3);
+	z-index: 0;
+}
+
+header * {
+	z-index: 1;
+}
+
+header h1 {
+	margin: 0 0 30px;
+}
+
+form  {
+	/* font-size: 0px; */
+	position: relative;
+	width: 500px;
+	max-width: 100%;
+}
+
+form>input {
+	border: 0;
+	border-radius: 50px;
+	font-size: 16px;
+	padding: 15px 30px;
+	width: 100%;
+}
+
+form>button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #e056fd;
+	border-radius: 50px;
+	color: #FFf;
+	font-size: 16px;
+	padding: 13px 30px;
+	border: 0;
+}
+
+.container {
+	margin: 30px auto;
+	max-width: 100%;
+	width: 500px;
+}
+
+ul.song {
+	list-style: none;
+	padding: 0;
+}
+
+ul.song li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+
+.btn {
+	background-color: #8d56fd;
+	border: 0;
+	border-radius: 10px;
+	color: #fff;
+	padding: 4px 10px;
+}
+
+.container h2 {
+	font-weight: 300;
+}
+
+.container p {
+	text-align: center;
+}
+.centered {
+	display: flex;
+	justify-content: center;
+}
+
+.centered button {
+	transform: scale(1.2);
+	margin: 15px;
+}
